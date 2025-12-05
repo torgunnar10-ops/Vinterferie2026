@@ -12,9 +12,7 @@
       --text: #333333;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -36,23 +34,10 @@
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.1rem;
-      margin-bottom: 0.25rem;
-    }
+    h1 { font-size: 2.1rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.2rem; font-weight: 400; color: #555; margin-bottom: 1.5rem; }
 
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #555;
-      margin-bottom: 1.5rem;
-    }
-
-    .heart {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
+    .heart { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; }
 
     .card {
       background: var(--card);
@@ -62,44 +47,15 @@
       box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     }
 
-    .card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 0.25rem;
-    }
+    .card h3 { font-size: 1.2rem; margin-bottom: 0.25rem; }
+    .subtitle { text-align: center; font-size: 0.95rem; color: #777; margin-bottom: 0.75rem; }
 
-    .subtitle {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #777;
-      margin-bottom: 0.75rem;
-    }
+    p { margin: 0.3rem 0; line-height: 1.6; font-size: 0.98rem; }
+    ul { margin: 0.4rem 0 0.1rem; padding-left: 1.2rem; }
+    li { margin: 0.2rem 0; }
 
-    p {
-      margin: 0.3rem 0;
-      line-height: 1.6;
-      font-size: 0.98rem;
-    }
-
-    ul {
-      margin: 0.4rem 0 0.1rem;
-      padding-left: 1.2rem;
-      font-size: 0.95rem;
-    }
-
-    li {
-      margin: 0.2rem 0;
-    }
-
-    .img-wrap {
-      margin-top: 10px;
-      border-radius: 14px;
-      overflow: hidden;
-    }
-
-    .img-wrap img {
-      width: 100%;
-      display: block;
-    }
+    .img-wrap { margin-top: 10px; border-radius: 14px; overflow: hidden; }
+    .img-wrap img { width: 100%; display: block; }
 
     footer {
       text-align: center;
@@ -107,15 +63,6 @@
       color: #777;
       margin-top: 20px;
       padding-bottom: 10px;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 12px;
-      }
-      .card {
-        padding: 14px 14px 16px;
-      }
     }
   </style>
 </head>
@@ -125,110 +72,114 @@
     <h1>Tor & Petters første ferie sammen</h1>
     <h2>Starten på noe veldig bra</h2>
 
+    <!-- Intro -->
     <div class="card">
       <p style="text-align:center; margin-bottom:0.6rem;">
         Vi drar fra vinter og hverdagsmas 14. januar, og jeg gleder meg helt sjukt til å være i solen med deg. 
-        Varme morgener, god mat, nye steder og tid til å bare være sammen uten noe stress.
+        Varme morgener, god mat, nye steder og tid til å bare være sammen uten stress.
       </p>
-      <p style="text-align:center;">
-        Dette er vår lille plan for Sri Lanka, bare for oss to. 🌴
-      </p>
+      <p style="text-align:center;">Dette er vår lille plan for Sri Lanka, bare for oss to. 🌴</p>
     </div>
 
     <!-- Colombo -->
     <div class="card">
-      <h3>📍 Colombo - 15. januar</h3>
+      <h3>📍 Colombo – 15. januar</h3>
       <p class="subtitle">Vi lander 15. januar kl. 01:55</p>
       <p>
         Vi lander midt på natten, så første stopp blir et hotell i Colombo med basseng på taket. 
-        Planen er enkel: rett på hotell, litt søvn, og så en rolig start på dagen i varmen.
+        Litt søvn, litt sol, og en rolig start før vi drar sørover.
       </p>
       <ul>
-        <li>Slappe av ved rooftop-pool</li>
-        <li>En enkel lunsj og kanskje en liten rusletur hvis vi orker</li>
-        <li>Finne feriemodus før vi drar videre sørover</li>
+        <li>Rooftop-pool og avslapping</li>
+        <li>Lunsj og en liten rusletur hvis vi orker</li>
+        <li>Finne feriemodus før vi drar videre</li>
       </ul>
-      <p><strong>Reise videre:</strong> Colombo til Mirissa tar cirka 2,5 til 3 timer med bil. Vi drar nedover på kvelden 15. januar, så vi våkner ved stranden neste morgen.</p>
+      <p><strong>Reise videre:</strong> Colombo → Mirissa tar ca. 2,5–3 timer. Vi kjører på kvelden 15. januar.</p>
+
       <div class="img-wrap">
-        <img src="bilder/colombo.jpg" alt="Colombo rooftop utsikt">
+        <img src="images/colombo.png" alt="Colombo rooftop utsikt">
       </div>
     </div>
 
     <!-- Mirissa & Weligama -->
     <div class="card">
-      <h3>🌴 Mirissa & Weligama - 16. til 24. januar</h3>
+      <h3>🌴 Mirissa & Weligama – 16.–24. januar</h3>
       <p class="subtitle">8 netter med strandliv, god mat og varme</p>
-      <p>
-        Her skal vi virkelig kjenne at vi har kommet oss vekk fra vinteren. 
-        Lange dager med strand, surf, snorkling og god mat, uten at vi trenger å ha fullpakket program.
-      </p>
+
+      <p>Her skal vi virkelig kjenne at vi er langt unna vinteren. Surf, snorkling, god mat og null stress.</p>
+
       <ul>
-        <li>Surf i Weligama når vi får lyst</li>
-        <li>Snorkling i Mirissa og på Secret Beach</li>
+        <li>Surf i Weligama</li>
+        <li>Snorkling i Mirissa & Secret Beach</li>
         <li>Whale watching en tidlig morgen</li>
-        <li>Dykketur for meg og snorkling for deg fra båten</li>
-        <li>Dagstur til Galle Fort med kaffe, små butikker og god lunsj</li>
-        <li>Strand, solnedganger og bra sjømat om kvelden</li>
+        <li>Dykketur for meg – snorkling for deg</li>
+        <li>Galle Fort for kaffe, butikker og lunsj</li>
+        <li>Sol, strand og god sjømat</li>
       </ul>
-      <p><strong>Reise videre:</strong> Mirissa til Udawalawe tar cirka 2,5 til 3 timer. Vi drar 24. januar.</p>
+
+      <p><strong>Reise videre:</strong> Mirissa → Udawalawe ca. 2,5–3 timer.</p>
+
       <div class="img-wrap">
-        <img src="bilder/mirissa.jpg" alt="Strand og palmer i Mirissa">
+        <img src="images/mirissa.png" alt="Strand og palmer i Mirissa">
       </div>
     </div>
 
     <!-- Udawalawe -->
     <div class="card">
-      <h3>🐘 Udawalawe - 24. til 26. januar</h3>
-      <p class="subtitle">To rolige dager med safari og natur</p>
-      <p>
-        Etter strandlivet drar vi innover til Udawalawe. Her er det roligere tempo, mer natur og safari i stedet for bølger.
-      </p>
+      <h3>🐘 Udawalawe – 24.–26. januar</h3>
+      <p class="subtitle">Safari, natur og ro</p>
+
+      <p>Her får vi to rolige dager i naturen, med safari både morgen og kveld.</p>
+
       <ul>
-        <li>Ettermiddagssafari den dagen vi kommer</li>
-        <li>Morgensafari neste dag med elefanter og morgensol</li>
-        <li>Resten av tiden ved basseng, med god mat og ro</li>
+        <li>Ettermiddagssafari når vi kommer</li>
+        <li>Morgensafari med elefanter</li>
+        <li>Basseng, ro og god mat</li>
       </ul>
-      <p><strong>Reise videre:</strong> Udawalawe til Hiriketiya tar cirka 2 til 2,5 timer. Vi drar 26. januar.</p>
+
+      <p><strong>Reise videre:</strong> Udawalawe → Hiriketiya ca. 2–2,5 timer.</p>
+
       <div class="img-wrap">
-        <img src="bilder/udawalawe.jpg" alt="Elefanter i Udawalawe">
+        <img src="images/udawalawe.png" alt="Elefanter i Udawalawe">
       </div>
     </div>
 
     <!-- Hiriketiya -->
     <div class="card">
-      <h3>🌊 Hiriketiya - 26. januar til 2. februar</h3>
-      <p class="subtitle">Liten bukt, jungel, surf og kanskje turens fineste dager</p>
-      <p>
-        Hiriketiya er en liten bukt med palmer, bølger og kafeer. Jeg tror dette blir den mest romantiske delen av reisen. 
-        Rolige morgener, mye tid i vannet og kvelder ute med god mat.
-      </p>
+      <h3>🌊 Hiriketiya – 26. januar–2. februar</h3>
+      <p class="subtitle">Surf, jungel og romantiske kvelder</p>
+
+      <p>En liten bukt med palmer, kafeer og rolig surf. Kanskje den fineste delen av hele reisen.</p>
+
       <ul>
-        <li>Snorkling i bukten, ofte med veldig rolig vann</li>
-        <li>Litt surf når vi har lyst</li>
-        <li>Brunsj på små kafeer med smoothie bowls, kaffe og alt som er digg</li>
-        <li>Dagstur til Tangalle hvis vi vil se enda mer strand og mindre folk</li>
-        <li>Middager i varme kvelder, bare oss to</li>
+        <li>Snorkling i bukten</li>
+        <li>Litt surf når vi får lyst</li>
+        <li>Kafeer og brunsjsteder</li>
+        <li>Dagstur til Tangalle for større strender</li>
+        <li>Solnedganger og god mat</li>
       </ul>
-      <p><strong>Reise videre:</strong> Hiriketiya til Colombo eller Negombo tar cirka 3,5 til 4 timer. Vi drar oppover 2. februar.</p>
+
+      <p><strong>Reise videre:</strong> Hiriketiya → Colombo/Negombo ca. 3,5–4 timer.</p>
+
       <div class="img-wrap">
-        <img src="bilder/hiriketiya.jpg" alt="Hiriketiya strand og palmer">
+        <img src="images/hiriketiya.png" alt="Hiriketiya strand og palmer">
       </div>
     </div>
 
     <!-- Siste kveld -->
     <div class="card">
-      <h3>🍸 2. februar - Siste kveld</h3>
+      <h3>🍸 2. februar – Siste kveld</h3>
       <p>
-        Siste kvelden tar vi en god middag og et par drinker i Colombo eller Negombo, før vi drar til flyplassen rundt midnatt. 
-        Litt solbrente, litt slitne og forhåpentligvis veldig fornøyde med alt vi har opplevd sammen.
+        En siste middag og drinker før vi drar til flyplassen rundt midnatt. 
+        Litt solbrente, litt slitne, men forhåpentligvis veldig glade og fulle av minner.
       </p>
-      <p><strong>Hjemreise:</strong> Fly fra Colombo 3. februar kl. 04:15, via Doha, og tilbake til Oslo samme dag.</p>
+      <p><strong>Hjemreise:</strong> 3. februar kl. 04:15 fra Colombo, via Doha, til Oslo.</p>
     </div>
 
-    <!-- Outro -->
     <footer>
-      Dette er vår første ferie sammen, og bare begynnelsen på alt vi skal oppleve. ❤️
+      Dette er vår første ferie sammen – og bare begynnelsen. ❤️
     </footer>
+
   </div>
 </body>
 </html>
