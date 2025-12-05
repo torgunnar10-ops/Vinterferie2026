@@ -32,7 +32,6 @@
 
     p { font-size: 14px; margin-bottom: 10px; }
 
-    /* Intro-boks */
     .hero {
       background: #ffffff;
       border: 1px solid #e5e7eb;
@@ -65,7 +64,7 @@
     .hero-text { flex: 1; }
 
     .hero-image {
-      flex: 0 0 170px;
+      flex: 0 0 230px;
     }
     .hero-image img {
       width: 100%;
@@ -73,7 +72,6 @@
       display: block;
     }
 
-    /* Seksjoner */
     .section {
       background: #ffffff;
       border: 1px solid #e5e7eb;
@@ -130,8 +128,8 @@
 
     .images img {
       display: block;
-      flex: 1 1 160px;
-      max-width: calc(50% - 4px);
+      flex: 1 1 260px;
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
     }
@@ -146,8 +144,7 @@
     @media (max-width: 700px) {
       body { padding: 10px; }
       .hero-inner { flex-direction: column; }
-      .hero-image { flex: none; max-width: 260px; }
-      .images img { max-width: 100%; }
+      .hero-image { flex: none; max-width: 100%; }
     }
   </style>
 </head>
@@ -173,8 +170,7 @@
           </p>
         </div>
         <div class="hero-image">
-          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"
-               alt="Rooftop-pool med utsikt over byen i Colombo">
+          <img src="images/colombo.png" alt="Colombo – rooftop, strand og bylys">
         </div>
       </div>
     </section>
@@ -211,17 +207,16 @@
       </ul>
 
       <div class="images">
-        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80"
-             alt="Rooftop-basseng med utsikt over Colombo">
+        <img src="images/colombo.png" alt="Colombo – collage med rooftop, strand og bylys">
       </div>
     </section>
 
-    <!-- MIRISSA & WELIGAMA -->
+    <!-- MIRISSA -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🌊</span>
-          <span>Mirissa og Weligama – surf og strandliv</span>
+          <span>Mirissa – palmer og strandliv</span>
         </div>
         <div class="section-date">16.–24. januar</div>
       </div>
@@ -229,9 +224,9 @@
       <span class="pill">Hoveddelen av ferien</span>
 
       <p>
-        Her starter feriefølelsen for alvor. Lange dager på stranden, surf i Weligama og varme kvelder med god mat.
-        Planen er egentlig bare å være oss to ved havet – sove godt, spise godt, ta en drink eller to og bade
-        til vi er skrukkete.
+        Her starter feriefølelsen for alvor. Lange dager på stranden, turer til Coconut Tree Hill og varme kvelder
+        med god mat. Planen er egentlig bare å være oss to ved havet – sove godt, spise godt, ta en drink eller to
+        og bade til vi er skrukkete.
       </p>
 
       <h3>Forslag til hoteller</h3>
@@ -243,17 +238,42 @@
 
       <h3>Forslag til ting vi kan gjøre</h3>
       <ul>
-        <li>Surf i Weligama – leie brett eller ta en time sammen</li>
-        <li>Snorkling i Mirissa</li>
-        <li>Whale watching en morgen</li>
-        <li>Dagstur til Galle Fort med kaffe, is og litt rusling i gamlebyen</li>
+        <li>Besøke Coconut Tree Hill</li>
+        <li>Solnedgang på stranden</li>
+        <li>Dagstur til Galle Fort med kaffe, is og rusling i gamlebyen</li>
       </ul>
 
       <div class="images">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
-             alt="Solnedgang på stranden i Mirissa">
-        <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=80"
-             alt="Surfere ved stranden i Weligama">
+        <img src="images/mirissa.png" alt="Mirissa – palmer, solnedgang og blått hav">
+      </div>
+    </section>
+
+    <!-- WELIGAMA -->
+    <section class="section">
+      <div class="section-header">
+        <div class="section-title-left">
+          <span class="icon">🏄</span>
+          <span>Weligama – surf og laid-back kystliv</span>
+        </div>
+        <div class="section-date">16.–24. januar (dagsturer fra Mirissa)</div>
+      </div>
+
+      <span class="pill">Surf &amp; strand</span>
+
+      <p>
+        Weligama blir surfebasen vår: myke bølger, strandbarer og rolige dager. Perfekt for å ta en surftime sammen
+        og bare henge ved havet.
+      </p>
+
+      <h3>Forslag til ting vi kan gjøre</h3>
+      <ul>
+        <li>Surftime sammen på Weligama Beach</li>
+        <li>Rusle langs stranden og se på fiskebåtene</li>
+        <li>Lunsj og kaffe på en av strandkafeene</li>
+      </ul>
+
+      <div class="images">
+        <img src="images/weligama.png" alt="Weligama – surf, fargerike båter og kystlinje">
       </div>
     </section>
 
@@ -289,8 +309,7 @@
       </ul>
 
       <div class="images">
-        <img src="https://images.unsplash.com/photo-1543248939-4296e1ced2f3?auto=format&fit=crop&w=1000&q=80"
-             alt="Elefanter på safari i Udawalawe nasjonalpark">
+        <img src="images/udawalawe.png" alt="Udawalawe – elefanter, jeep og reservoar">
       </div>
     </section>
 
@@ -299,12 +318,12 @@
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🌴</span>
-          <span>Hiriketiya – liten jungelbukt</span>
+          <span>Hiriketiya – vår lille jungelbukt</span>
         </div>
         <div class="section-date">26. jan – 2. feb</div>
       </div>
 
-      <span class="pill">Vår egen lille boble</span>
+      <span class="pill">Vår egen boble</span>
 
       <p>
         Slutten av turen er vår lille boble ved havet. Surfebukt, palmer, små kafeer og boutiquehoteller.
@@ -328,10 +347,7 @@
       </ul>
 
       <div class="images">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
-             alt="Stranden og palmer i Hiriketiya">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
-             alt="Palmer langs stranden i Sri Lanka">
+        <img src="images/hiriketiya.png" alt="Hiriketiya – bukt, surfere og grønn jungel">
       </div>
     </section>
 
@@ -352,11 +368,6 @@
         før vi drar til flyplassen rundt midnatt. Resten av natten er oss to sovende ved siden av hverandre
         på vei hjem – forhåpentligvis lykkelige, slitne og allerede litt klare for neste tur.
       </p>
-
-      <div class="images">
-        <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=1000&q=80"
-             alt="To glass champagne på en restaurant">
-      </div>
     </section>
 
     <footer>
