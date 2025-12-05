@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>Tor & Petters første ferie sammen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     :root {
       --bg: #f8f4f2;
       --card: #ffffff;
-      --accent: #e58a9b;
       --text: #333333;
     }
 
@@ -29,71 +29,137 @@
       width: 100%;
     }
 
-    h1, h2, h3 {
-      margin: 0;
-      text-align: center;
+    /* --- HERO HEADER --- */
+
+    .hero {
+      width: 100%;
+      height: 260px;
+      border-radius: 18px;
+      margin-bottom: 26px;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.20)),
+        url("images/hiriketiya.png");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: flex-end;
+      padding: 26px;
+      color: white;
     }
 
-    h1 { font-size: 2.1rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.2rem; font-weight: 400; color: #555; margin-bottom: 1.5rem; }
+    .hero-text h1 {
+      font-size: 1.9rem;
+      margin: 0 0 8px 0;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
 
-    .heart { text-align: center; font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero-text p {
+      font-size: 1.05rem;
+      margin: 0;
+      line-height: 1.45;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    }
+
+    /* --- CARDS --- */
 
     .card {
       background: var(--card);
       border-radius: 16px;
-      padding: 18px 18px 20px;
-      margin-bottom: 18px;
+      padding: 18px 20px 20px;
+      margin-bottom: 20px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.07);
     }
 
-    .card h3 { font-size: 1.2rem; margin-bottom: 0.25rem; }
-    .subtitle { text-align: center; font-size: 0.95rem; color: #777; margin-bottom: 0.75rem; }
+    .card h3 {
+      margin: 0 0 4px 0;
+      font-size: 1.2rem;
+      text-align: center;
+    }
 
-    p { margin: 0.3rem 0; line-height: 1.6; font-size: 0.98rem; }
-    ul { margin: 0.4rem 0 0.1rem; padding-left: 1.2rem; }
-    li { margin: 0.2rem 0; }
+    .subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #777;
+      margin-bottom: 0.75rem;
+    }
 
-    .img-wrap { margin-top: 10px; border-radius: 14px; overflow: hidden; }
-    .img-wrap img { width: 100%; display: block; }
+    p {
+      margin: 0.4rem 0;
+      line-height: 1.6;
+      font-size: 0.98rem;
+    }
+
+    ul {
+      margin: 0.4rem 0 0.2rem;
+      padding-left: 1.2rem;
+    }
+
+    li { margin: 0.25rem 0; }
+
+    .img-wrap {
+      margin-top: 12px;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .img-wrap img {
+      width: 100%;
+      display: block;
+    }
 
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
-      margin-top: 20px;
-      padding-bottom: 10px;
+      margin-top: 22px;
+      padding-bottom: 16px;
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 14px; }
+      .hero { height: 220px; padding: 20px; }
+      .hero-text h1 { font-size: 1.6rem; }
+      .hero-text p { font-size: 0.95rem; }
     }
   </style>
 </head>
+
 <body>
   <div class="wrap">
-    <div class="heart">❤️✨</div>
-    <h1>Tor & Petters første ferie sammen</h1>
-    <h2>Starten på noe veldig bra</h2>
 
-    <!-- Intro -->
-    <div class="card">
-      <p style="text-align:center; margin-bottom:0.6rem;">
-        Vi drar fra vinter og hverdagsmas 14. januar, og jeg gleder meg helt sjukt til å være i solen med deg. 
-        Varme morgener, god mat, nye steder og tid til å bare være sammen uten stress.
-      </p>
-      <p style="text-align:center;">Dette er vår lille plan for Sri Lanka, bare for oss to. 🌴</p>
+    <!-- HERO SECTION -->
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Sri Lanka 2026 – Tor & Petter</h1>
+        <p>🥥🌅 Et lite eventyr i varmen – med palmer, strender og alt som får oss til å glemme vinteren.<br>
+        Bare du og jeg, og masse tid sammen.</p>
+      </div>
     </div>
 
-    <!-- Colombo -->
+    <!-- INTRO CARD -->
+    <div class="card">
+      <p style="text-align:center; margin-bottom:0.6rem;">
+        Vi drar fra vinter og hverdagsmas 14. januar, og jeg gleder meg helt sjukt til å være i solen med deg.
+        Varme morgener, god mat, nye steder og tid til å bare være sammen uten stress.
+      </p>
+      <p style="text-align:center;">
+        Dette er vår lille plan for Sri Lanka, bare for oss to. 🌴
+      </p>
+    </div>
+
+    <!-- COLOMBO -->
     <div class="card">
       <h3>📍 Colombo – 15. januar</h3>
       <p class="subtitle">Vi lander 15. januar kl. 01:55</p>
-      <p>
-        Vi lander midt på natten, så første stopp blir et hotell i Colombo med basseng på taket. 
-        Litt søvn, litt sol, og en rolig start før vi drar sørover.
-      </p>
+
+      <p>Vi lander midt på natten, så første stopp blir et hotell i Colombo med basseng på taket. En rolig start før vi drar sørover.</p>
+
       <ul>
         <li>Rooftop-pool og avslapping</li>
-        <li>Lunsj og en liten rusletur hvis vi orker</li>
+        <li>Lunsj og en liten rusletur</li>
         <li>Finne feriemodus før vi drar videre</li>
       </ul>
+
       <p><strong>Reise videre:</strong> Colombo → Mirissa tar ca. 2,5–3 timer. Vi kjører på kvelden 15. januar.</p>
 
       <div class="img-wrap">
@@ -101,7 +167,7 @@
       </div>
     </div>
 
-    <!-- Mirissa & Weligama -->
+    <!-- MIRISSA & WELIGAMA -->
     <div class="card">
       <h3>🌴 Mirissa & Weligama – 16.–24. januar</h3>
       <p class="subtitle">8 netter med strandliv, god mat og varme</p>
@@ -124,7 +190,7 @@
       </div>
     </div>
 
-    <!-- Udawalawe -->
+    <!-- UDAWALAWE -->
     <div class="card">
       <h3>🐘 Udawalawe – 24.–26. januar</h3>
       <p class="subtitle">Safari, natur og ro</p>
@@ -144,7 +210,7 @@
       </div>
     </div>
 
-    <!-- Hiriketiya -->
+    <!-- HIRIKETIYA -->
     <div class="card">
       <h3>🌊 Hiriketiya – 26. januar–2. februar</h3>
       <p class="subtitle">Surf, jungel og romantiske kvelder</p>
@@ -155,7 +221,7 @@
         <li>Snorkling i bukten</li>
         <li>Litt surf når vi får lyst</li>
         <li>Kafeer og brunsjsteder</li>
-        <li>Dagstur til Tangalle for større strender</li>
+        <li>Dagstur til Tangalle</li>
         <li>Solnedganger og god mat</li>
       </ul>
 
@@ -166,12 +232,11 @@
       </div>
     </div>
 
-    <!-- Siste kveld -->
+    <!-- LAST EVENING -->
     <div class="card">
       <h3>🍸 2. februar – Siste kveld</h3>
       <p>
-        En siste middag og drinker før vi drar til flyplassen rundt midnatt. 
-        Litt solbrente, litt slitne, men forhåpentligvis veldig glade og fulle av minner.
+        En siste middag og drinker før vi drar til flyplassen rundt midnatt. Litt solbrente, slitne og veldig glade.
       </p>
       <p><strong>Hjemreise:</strong> 3. februar kl. 04:15 fra Colombo, via Doha, til Oslo.</p>
     </div>
