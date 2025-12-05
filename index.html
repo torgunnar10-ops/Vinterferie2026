@@ -5,14 +5,10 @@
   <title>Tor & Petter – Sri Lanka 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, sans-serif;
       background: #f3f4f6;
       color: #111827;
       line-height: 1.6;
@@ -24,93 +20,62 @@
       margin: 0 auto 40px auto;
     }
 
-    h1 {
-      font-size: 26px;
-      margin-bottom: 6px;
-    }
+    h1 { font-size: 26px; margin-bottom: 8px; }
 
     h3 {
       font-size: 13px;
-      margin: 12px 0 4px 0;
+      margin: 14px 0 4px 0;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-weight: 600;
+      letter-spacing: 0.06em;
       color: #6b7280;
     }
 
-    p {
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    /* Intro-boks */
+    p { font-size: 14px; margin-bottom: 10px; }
 
     .hero {
       background: #ffffff;
       border: 1px solid #e5e7eb;
-      border-radius: 14px;
+      border-radius: 12px;
       padding: 16px;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
     }
 
     .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+      display: inline-block;
       font-size: 11px;
-      padding: 3px 9px;
+      padding: 3px 8px;
       border-radius: 999px;
       background: #eff6ff;
       color: #1d4ed8;
-      margin-bottom: 10px;
-    }
-
-    .hero-tag span.dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: #10b981;
-    }
-
-    .hero-topline {
-      font-size: 13px;
-      color: #6b7280;
-      margin-bottom: 2px;
+      margin-bottom: 8px;
     }
 
     .hero-dates {
       font-size: 13px;
       color: #4b5563;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .hero-inner {
       display: flex;
-      gap: 16px;
-      align-items: flex-start;
+      gap: 14px;
     }
 
-    .hero-text {
-      flex: 1;
-    }
+    .hero-text { flex: 1; }
 
     .hero-image {
       flex: 0 0 170px;
     }
-
     .hero-image img {
       width: 100%;
-      height: auto;
       border-radius: 10px;
       display: block;
     }
 
-    /* Seksjoner */
-
     .section {
       background: #ffffff;
-      border-radius: 10px;
       border: 1px solid #e5e7eb;
+      border-radius: 10px;
       padding: 16px;
       margin-bottom: 16px;
     }
@@ -118,25 +83,17 @@
     .section-header {
       display: flex;
       justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
       margin-bottom: 6px;
     }
 
     .section-title-left {
       display: flex;
-      align-items: baseline;
       gap: 6px;
-    }
-
-    .section-title-left span.icon {
-      font-size: 18px;
-    }
-
-    .section-title-left span.title-text {
-      font-weight: 600;
       font-size: 16px;
+      font-weight: 600;
     }
+
+    .section-title-left .icon { font-size: 18px; }
 
     .section-date {
       font-size: 13px;
@@ -160,9 +117,7 @@
       font-size: 14px;
     }
 
-    li {
-      margin-bottom: 2px;
-    }
+    li { margin-bottom: 2px; }
 
     .images {
       margin-top: 10px;
@@ -187,37 +142,19 @@
     }
 
     @media (max-width: 700px) {
-      body {
-        padding: 10px;
-      }
-
-      .hero-inner {
-        flex-direction: column;
-      }
-
-      .hero-image {
-        flex: none;
-        max-width: 260px;
-      }
-
-      .images img {
-        max-width: 100%;
-      }
+      body { padding: 10px; }
+      .hero-inner { flex-direction: column; }
+      .hero-image { flex: none; max-width: 260px; }
+      .images img { max-width: 100%; }
     }
   </style>
 </head>
 <body>
   <div class="page">
 
-    <!-- INTRO -->
     <section class="hero">
-      <div class="hero-tag">
-        <span class="dot"></span>
-        <span>Reiseguide for oss to</span>
-      </div>
-
-      <p class="hero-topline">Tor &amp; Petter • Sri Lanka 2026 🌴</p>
-      <h1>Vår første lange tur sammen</h1>
+      <div class="hero-tag">Reiseguide for oss to</div>
+      <h1>Tor &amp; Petter – Sri Lanka 2026 🌴</h1>
       <p class="hero-dates">15. januar – 3. februar</p>
 
       <div class="hero-inner">
@@ -233,18 +170,16 @@
           </p>
         </div>
         <div class="hero-image">
-          <!-- Rooftop-pool / by-kveld -->
           <img src="https://source.unsplash.com/featured/800x500/?sri-lanka,colombo,rooftop,pool" alt="Rooftop-pool med utsikt over byen i Colombo">
         </div>
       </div>
     </section>
 
-    <!-- COLOMBO -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">📍</span>
-          <span class="title-text">Colombo – soft landing og rooftop-pool</span>
+          <span>Colombo – soft landing og rooftop-pool</span>
         </div>
         <div class="section-date">15. januar</div>
       </div>
@@ -275,12 +210,11 @@
       </div>
     </section>
 
-    <!-- MIRISSA & WELIGAMA -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🌊</span>
-          <span class="title-text">Mirissa og Weligama – surf og strandliv</span>
+          <span>Mirissa og Weligama – surf og strandliv</span>
         </div>
         <div class="section-date">16.–24. januar</div>
       </div>
@@ -314,12 +248,11 @@
       </div>
     </section>
 
-    <!-- UDAWALAWE -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🐘</span>
-          <span class="title-text">Udawalawe – safari og elefanter</span>
+          <span>Udawalawe – safari og elefanter</span>
         </div>
         <div class="section-date">24.–26. januar</div>
       </div>
@@ -350,12 +283,11 @@
       </div>
     </section>
 
-    <!-- HIRIKETIYA -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🌴</span>
-          <span class="title-text">Hiriketiya – liten jungelbukt</span>
+          <span>Hiriketiya – liten jungelbukt</span>
         </div>
         <div class="section-date">26. jan – 2. feb</div>
       </div>
@@ -389,12 +321,11 @@
       </div>
     </section>
 
-    <!-- SISTE KVELD -->
     <section class="section">
       <div class="section-header">
         <div class="section-title-left">
           <span class="icon">🍸</span>
-          <span class="title-text">Siste kveld og hjemreise</span>
+          <span>Siste kveld og hjemreise</span>
         </div>
         <div class="section-date">2.–3. februar</div>
       </div>
