@@ -10,6 +10,7 @@
       --bg: #f8f4f2;
       --card: #ffffff;
       --text: #333333;
+      --soft: #fdfdfd;
     }
 
     * { box-sizing: border-box; }
@@ -29,35 +30,29 @@
       width: 100%;
     }
 
-    /* --- HERO HEADER --- */
+    /* --- CLEAN HERO SECTION --- */
 
-    .hero {
-      width: 100%;
-      height: 260px;
+    .hero-clean {
+      background: var(--soft);
       border-radius: 18px;
-      margin-bottom: 26px;
-      background:
-        linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.20)),
-        url("images/hiriketiya.png");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: flex-end;
-      padding: 26px;
-      color: white;
+      padding: 38px 28px;
+      text-align: center;
+      margin-bottom: 28px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.06);
     }
 
-    .hero-text h1 {
-      font-size: 1.9rem;
-      margin: 0 0 8px 0;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+    .hero-clean h1 {
+      font-size: 2.3rem;
+      margin: 0 0 12px 0;
+      font-weight: 600;
+      letter-spacing: -0.5px;
     }
 
-    .hero-text p {
-      font-size: 1.05rem;
+    .hero-clean p {
+      font-size: 1.1rem;
       margin: 0;
-      line-height: 1.45;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.35);
+      color: #555;
+      line-height: 1.55;
     }
 
     /* --- CARDS --- */
@@ -117,9 +112,8 @@
 
     @media (max-width: 600px) {
       body { padding: 14px; }
-      .hero { height: 220px; padding: 20px; }
-      .hero-text h1 { font-size: 1.6rem; }
-      .hero-text p { font-size: 0.95rem; }
+      .hero-clean h1 { font-size: 1.9rem; }
+      .hero-clean p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -127,23 +121,21 @@
 <body>
   <div class="wrap">
 
-    <!-- HERO SECTION -->
-    <div class="hero">
-      <div class="hero-text">
-        <h1>Sri Lanka 2026 – Tor & Petter</h1>
-        <p>🥥🌅 Et lite eventyr i varmen – med palmer, strender og alt som får oss til å glemme vinteren.<br>
-        Bare du og jeg, og masse tid sammen.</p>
-      </div>
+    <!-- CLEAN HERO -->
+    <div class="hero-clean">
+      <h1>Sri Lanka 2026 – Tor & Petter</h1>
+      <p>🥥🌅 Et lite eventyr i varmen, langt unna vinteren.<br>
+      Sol, strender, god mat – og masse tid bare for oss.</p>
     </div>
 
     <!-- INTRO CARD -->
     <div class="card">
       <p style="text-align:center; margin-bottom:0.6rem;">
-        Vi drar fra vinter og hverdagsmas 14. januar, og jeg gleder meg helt sjukt til å være i solen med deg.
-        Varme morgener, god mat, nye steder og tid til å bare være sammen uten stress.
+        Vi reiser 14. januar, og jeg gleder meg helt sjukt til to uker i varmen med deg.
+        Rolige morgener, strandliv, god mat og tid til å bare være sammen.
       </p>
       <p style="text-align:center;">
-        Dette er vår lille plan for Sri Lanka, bare for oss to. 🌴
+        Her er planen vår for Sri Lanka, steg for steg. 🌴
       </p>
     </div>
 
@@ -152,10 +144,10 @@
       <h3>📍 Colombo – 15. januar</h3>
       <p class="subtitle">Vi lander 15. januar kl. 01:55</p>
 
-      <p>Vi lander midt på natten, så første stopp blir et hotell i Colombo med basseng på taket. En rolig start før vi drar sørover.</p>
+      <p>Vi starter med en natt i Colombo siden vi lander midt på natten. En rolig dag med sol og pool før vi drar sørover.</p>
 
       <ul>
-        <li>Rooftop-pool og avslapping</li>
+        <li>Rooftop-pool og avslapning</li>
         <li>Lunsj og en liten rusletur</li>
         <li>Finne feriemodus før vi drar videre</li>
       </ul>
@@ -163,30 +155,30 @@
       <p><strong>Reise videre:</strong> Colombo → Mirissa tar ca. 2,5–3 timer. Vi kjører på kvelden 15. januar.</p>
 
       <div class="img-wrap">
-        <img src="images/colombo.png" alt="Colombo rooftop utsikt">
+        <img src="images/colombo.png" alt="Colombo">
       </div>
     </div>
 
-    <!-- MIRISSA & WELIGAMA -->
+    <!-- MIRISSA -->
     <div class="card">
       <h3>🌴 Mirissa & Weligama – 16.–24. januar</h3>
-      <p class="subtitle">8 netter med strandliv, god mat og varme</p>
+      <p class="subtitle">8 netter med strandliv, varme og gode opplevelser</p>
 
-      <p>Her skal vi virkelig kjenne at vi er langt unna vinteren. Surf, snorkling, god mat og null stress.</p>
+      <p>Her starter ferien på ordentlig: surf, snorkling, god mat og rolige dager.</p>
 
       <ul>
         <li>Surf i Weligama</li>
         <li>Snorkling i Mirissa & Secret Beach</li>
-        <li>Whale watching en tidlig morgen</li>
-        <li>Dykketur for meg – snorkling for deg</li>
+        <li>Whale watching</li>
+        <li>Dykking for meg – snorkling for deg</li>
         <li>Galle Fort for kaffe, butikker og lunsj</li>
-        <li>Sol, strand og god sjømat</li>
+        <li>Sol, strand og sjømat</li>
       </ul>
 
       <p><strong>Reise videre:</strong> Mirissa → Udawalawe ca. 2,5–3 timer.</p>
 
       <div class="img-wrap">
-        <img src="images/mirissa.png" alt="Strand og palmer i Mirissa">
+        <img src="images/mirissa.png" alt="Mirissa">
       </div>
     </div>
 
@@ -195,7 +187,7 @@
       <h3>🐘 Udawalawe – 24.–26. januar</h3>
       <p class="subtitle">Safari, natur og ro</p>
 
-      <p>Her får vi to rolige dager i naturen, med safari både morgen og kveld.</p>
+      <p>To dager i naturen med safari morgen og kveld.</p>
 
       <ul>
         <li>Ettermiddagssafari når vi kommer</li>
@@ -206,20 +198,20 @@
       <p><strong>Reise videre:</strong> Udawalawe → Hiriketiya ca. 2–2,5 timer.</p>
 
       <div class="img-wrap">
-        <img src="images/udawalawe.png" alt="Elefanter i Udawalawe">
+        <img src="images/udawalawe.png" alt="Udawalawe">
       </div>
     </div>
 
     <!-- HIRIKETIYA -->
     <div class="card">
       <h3>🌊 Hiriketiya – 26. januar–2. februar</h3>
-      <p class="subtitle">Surf, jungel og romantiske kvelder</p>
+      <p class="subtitle">Surf, kafeer, jungel og romantiske kvelder</p>
 
-      <p>En liten bukt med palmer, kafeer og rolig surf. Kanskje den fineste delen av hele reisen.</p>
+      <p>En av de fineste stedene på turen. En liten bukt, palmer og veldig chill stemning.</p>
 
       <ul>
         <li>Snorkling i bukten</li>
-        <li>Litt surf når vi får lyst</li>
+        <li>Litt surf når vi vil</li>
         <li>Kafeer og brunsjsteder</li>
         <li>Dagstur til Tangalle</li>
         <li>Solnedganger og god mat</li>
@@ -228,17 +220,15 @@
       <p><strong>Reise videre:</strong> Hiriketiya → Colombo/Negombo ca. 3,5–4 timer.</p>
 
       <div class="img-wrap">
-        <img src="images/hiriketiya.png" alt="Hiriketiya strand og palmer">
+        <img src="images/hiriketiya.png" alt="Hiriketiya">
       </div>
     </div>
 
     <!-- LAST EVENING -->
     <div class="card">
       <h3>🍸 2. februar – Siste kveld</h3>
-      <p>
-        En siste middag og drinker før vi drar til flyplassen rundt midnatt. Litt solbrente, slitne og veldig glade.
-      </p>
-      <p><strong>Hjemreise:</strong> 3. februar kl. 04:15 fra Colombo, via Doha, til Oslo.</p>
+      <p>En siste middag og drinker før vi drar til flyplassen rundt midnatt.</p>
+      <p><strong>Hjemreise:</strong> 3. februar kl. 04:15 via Doha til Oslo.</p>
     </div>
 
     <footer>
