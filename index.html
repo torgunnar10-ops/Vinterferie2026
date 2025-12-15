@@ -1,315 +1,364 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sri Lanka 2026 – Tor & Petter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <style>
     :root{
       --bg:#f8f4f2;
       --hero:#fde9e3;
       --card:#ffffff;
-      --text:#333;
-      --muted:#777;
+      --text:#2f2f2f;
+      --muted:#6f6f6f;
       --line:#eee;
       --accent:#e6b8a2;
     }
-
+    *{ box-sizing:border-box; }
     body{
       margin:0;
-      padding:20px;
+      padding:18px;
       background:var(--bg);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       color:var(--text);
       display:flex;
       justify-content:center;
     }
-
     .wrap{ max-width:900px; width:100%; }
-
     .hero{
       background:var(--hero);
       border-radius:22px;
-      padding:44px 30px;
+      padding:40px 26px;
       text-align:center;
-      margin-bottom:18px;
+      margin-bottom:16px;
     }
-
     .hero h1{
       margin:0 0 10px 0;
-      font-size:2.4rem;
+      font-size:2.25rem;
+      letter-spacing:0.2px;
     }
-
     .hero p{
       margin:0;
       font-size:1.05rem;
       line-height:1.6;
       color:#5a4f4b;
     }
-
     .card{
       background:var(--card);
       border-radius:18px;
-      padding:22px 26px;
-      margin-bottom:20px;
+      padding:20px 22px;
+      margin-bottom:16px;
       box-shadow:0 2px 12px rgba(0,0,0,0.06);
     }
-
     h2{
       margin:0 0 6px 0;
-      font-size:1.35rem;
+      font-size:1.25rem;
       text-align:center;
     }
-
     .subtitle{
       text-align:center;
       font-size:0.95rem;
       color:var(--muted);
       margin-bottom:6px;
     }
-
     .mood{
       text-align:center;
       font-size:0.95rem;
       font-style:italic;
       color:#666;
-      margin-bottom:12px;
+      margin-bottom:10px;
     }
-
-    .place-image{
-      margin:14px 0;
-      border-radius:16px;
-      overflow:hidden;
-    }
-
-    .place-image img{
-      width:100%;
-      height:280px;
-      object-fit:cover;
-      display:block;
-    }
-
     p{
-      margin:0.45rem 0;
-      line-height:1.65;
+      margin:0.5rem 0;
+      line-height:1.7;
       font-size:0.98rem;
     }
-
     ul{
       margin:0.5rem 0 0.2rem;
       padding-left:1.2rem;
-      font-size:0.95rem;
+      font-size:0.96rem;
     }
-
     li{ margin:0.3rem 0; }
-
     .meta{
       margin-top:12px;
-      font-size:0.88rem;
+      font-size:0.9rem;
       color:var(--muted);
       border-top:1px solid var(--line);
       padding-top:10px;
     }
-
     .mono{
       font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size:0.86rem;
+      font-size:0.88rem;
     }
-
+    .timeline{
+      border-left:3px solid var(--accent);
+      padding-left:16px;
+      margin-top:6px;
+    }
+    .event{
+      margin:12px 0;
+    }
+    .event span{
+      display:block;
+      color:var(--muted);
+      font-size:0.9rem;
+      margin-top:2px;
+    }
+    .pillrow{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      justify-content:center;
+      margin-top:10px;
+    }
+    .pill{
+      background:#fff7f4;
+      border:1px solid #f2d8cf;
+      color:#6a5450;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:0.9rem;
+      white-space:nowrap;
+    }
     footer{
       text-align:center;
       font-size:0.95rem;
       color:#666;
-      margin:34px 0 12px;
+      margin:26px 0 10px;
     }
   </style>
 </head>
 
 <body>
-<div class="wrap">
+  <div class="wrap">
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Sri Lanka 2026 – Tor & Petter</h1>
-    <p>
-      🥥🌅 Vi rømmer fra vinteren og inn i varmen.<br>
-      Senker skuldrene, spiser godt og er sammen.
-    </p>
-    <p style="margin-top:10px;">
-      14. januar – 2. februar 2026 ❤️
-    </p>
+    <div class="hero">
+      <h1>Sri Lanka 2026 – Tor & Petter</h1>
+      <p>
+        🥥🌅 Vi rømmer fra vinteren og inn i varmen.<br />
+        Senker skuldrene, spiser godt og er sammen.
+      </p>
+      <p style="margin-top:10px;">14. januar – 2. februar 2026 ❤️</p>
+      <div class="pillrow">
+        <div class="pill">Sol & bad</div>
+        <div class="pill">Surf (rolig tempo)</div>
+        <div class="pill">Safari (Udawalawe)</div>
+        <div class="pill">Snorkling for Petter</div>
+        <div class="pill">God mat & fine kvelder</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <p style="text-align:center; margin:0;">
+        Dette er vår lille reiseguide. Alt under er forslag – planen er å ta dagene som de kommer ✨
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>✈️ Flyreise</h2>
+      <p><strong>Qatar Airways</strong> · Bookingreferanse (PNR): <span class="mono">8XGTR2</span></p>
+
+      <p>
+        <strong>Utreise (onsdag 14. jan):</strong><br />
+        OSL 09:00 → DOH 17:30 (QR180)<br />
+        DOH 18:40 → CMB 01:55 (+1 dag) (QR658)
+      </p>
+
+      <p>
+        <strong>Hjemreise (natt til tirsdag 3. feb):</strong><br />
+        CMB 04:15 → DOH 06:45 (QR663)<br />
+        DOH 08:30 → OSL 13:30 (QR175)
+      </p>
+
+      <div class="meta">
+        Praktisk: For hjemreisen bør vi dra fra hotellet i Colombo ca. <strong>01:00</strong> natt til 3. februar for å ha god margin.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🗓️ Tidslinje</h2>
+      <div class="timeline">
+        <div class="event">
+          <strong>14.–16. jan – Colombo</strong>
+          <span>Myk landing etter nattfly + rooftop-pool</span>
+        </div>
+        <div class="event">
+          <strong>16.–20. jan – Weligama</strong>
+          <span>Strand, surf, bading og feriemodus</span>
+        </div>
+        <div class="event">
+          <strong>20.–24. jan – Tangalle</strong>
+          <span>Rolig strandliv og kvelder i varmen</span>
+        </div>
+        <div class="event">
+          <strong>24.–26. jan – Udawalawe</strong>
+          <span>Safari (elefanter) + hvile</span>
+        </div>
+        <div class="event">
+          <strong>26. jan – 1. feb – Unawatuna / Galle</strong>
+          <span>Strand, snorkling og dagstur til Galle Fort</span>
+        </div>
+        <div class="event">
+          <strong>1.–2. feb – Colombo</strong>
+          <span>Siste kveld: god middag, rolig tempo, pakke i fred</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📍 Colombo</h2>
+      <div class="subtitle">14.–16. januar · 2 netter</div>
+      <div class="mood">Myk landing etter lang reise.</div>
+
+      <p>
+        Vi lander midt på natten, så første stopp er bevisst valgt for komfort.
+        Planen er enkel: rett på hotell, sove, og våkne sakte i varmen. Første dagen
+        er for å hente oss inn og komme i feriemodus – uten å måtte prestere noe som helst.
+      </p>
+
+      <ul>
+        <li>Rooftop-pool og rolig start</li>
+        <li>God lunsj og kaffe når vi orker</li>
+        <li>Kort rusletur om energien er der</li>
+      </ul>
+
+      <div class="meta">
+        <strong>Hotell:</strong> NH Collection Colombo · Expedia<br />
+        <strong>Booking:</strong> <span class="mono">72069181874349</span><br />
+        <strong>Videre:</strong> Colombo → Weligama ca. 2,5–3 t (vi drar 16. jan)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🌊 Weligama</h2>
+      <div class="subtitle">16.–20. januar · 4 netter</div>
+      <div class="mood">Her starter strandlivet for alvor.</div>
+
+      <p>
+        Weligama er den perfekte starten på kystdelen: strand rett ved, god standard og
+        akkurat passe “resort” til at alt blir lett. Her kan vi ha lange dager med bading,
+        sol og litt surf når vi får lyst – uten at vi må planlegge masse.
+      </p>
+
+      <ul>
+        <li>Leie surfebrett (evt. en rolig surfetime)</li>
+        <li>Strand + basseng (vi tar det som frister)</li>
+        <li>Fine middager og solnedganger</li>
+      </ul>
+
+      <div class="meta">
+        <strong>Hotell:</strong> Weligama Bay Marriott Resort & Spa · Expedia<br />
+        <strong>Booking:</strong> <span class="mono">72069183729375</span><br />
+        <strong>Videre:</strong> Weligama → Tangalle ca. 1,5–2 t (20. jan)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🏝️ Tangalle</h2>
+      <div class="subtitle">20.–24. januar · 4 netter</div>
+      <div class="mood">Rolige dager uten klokke.</div>
+
+      <p>
+        I Tangalle skrur vi tempoet enda litt ned. Dette er mer “barføtt-ferie”:
+        rolig strand, lyden av havet og kvelder som bare glir avgårde. Her er planen
+        å bare nyte – og ha plass til spontane småting hvis vi får lyst.
+      </p>
+
+      <ul>
+        <li>Strandliv og lange pauser</li>
+        <li>Snorkling når forholdene er fine</li>
+        <li>Rolige kvelder, god mat og tid sammen</li>
+      </ul>
+
+      <div class="meta">
+        <strong>Hotell:</strong> Shiva’s Beach Cabanas · Booking.com<br />
+        <strong>Booking:</strong> <span class="mono">5779024415</span><br />
+        <strong>Videre:</strong> Tangalle → Udawalawe ca. 2–2,5 t (24. jan)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🐘 Udawalawe</h2>
+      <div class="subtitle">24.–26. januar · 2 netter</div>
+      <div class="mood">Et lite eventyr midt i roen.</div>
+
+      <p>
+        Et avbrekk fra kysten og inn i naturen. Udawalawe er først og fremst for elefanter,
+        åpne landskap og de der morgenene som føles litt magiske. Vi holder det rolig:
+        én safari på ettermiddag og én på morgenen (hvis vi vil), og ellers hviler vi.
+      </p>
+
+      <ul>
+        <li>Safari (elefanter + morgenlys)</li>
+        <li>Slappe av ved lodgen mellom turene</li>
+      </ul>
+
+      <div class="meta">
+        <strong>Hotell:</strong> Elephant Trail · Booking.com<br />
+        <strong>Booking:</strong> <span class="mono">5948566641</span><br />
+        <strong>Videre:</strong> Udawalawe → Unawatuna ca. 2,5–3,5 t (26. jan)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🌴 Unawatuna / Galle</h2>
+      <div class="subtitle">26. jan – 1. feb · 6 netter</div>
+      <div class="mood">Ferieferie – uten at vi må rekke noe.</div>
+
+      <p>
+        Siste lange stopp. Her har vi en perfekt miks av strand, god mat og små utflukter.
+        Vi tar det som det kommer: snorkling for Petter, bading, late morgener, og kanskje
+        en dagstur til Galle Fort for kaffe, små butikker og en skikkelig god lunsj.
+      </p>
+
+      <ul>
+        <li>Strand og snorkling</li>
+        <li>Dagstur til Galle Fort</li>
+        <li>Middager ute i varme kvelder</li>
+      </ul>
+
+      <div class="meta">
+        <strong>Hotell:</strong> Jungle Village by Thawthisa · Expedia<br />
+        <strong>Booking:</strong> <span class="mono">72069183025778</span><br />
+        <strong>Videre:</strong> Unawatuna → Colombo ca. 2–2,5 t (1. feb)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🍸 Siste kveld – Colombo</h2>
+      <div class="subtitle">1.–2. februar · 1 natt</div>
+      <div class="mood">En rolig avslutning før hjemreise.</div>
+
+      <p>
+        Siste kvelden gjør vi den enkel og fin: en god middag, et par drinker,
+        pakke i fred og ro – og så drar vi til flyplassen sent på natten.
+        Litt solbrune, litt slitne og veldig fornøyde.
+      </p>
+
+      <div class="meta">
+        <strong>Hotell:</strong> ITC Ratnadipa, a Luxury Collection Hotel · Expedia<br />
+        <strong>Booking:</strong> <span class="mono">72069184492710</span><br />
+        <strong>Når vi drar:</strong> ca. <strong>01:00</strong> natt til 3. feb (fly 04:15)
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🧭 Praktisk info</h2>
+      <ul>
+        <li><strong>SIM:</strong> Dialog på flyplassen (best dekning)</li>
+        <li><strong>Taxi:</strong> PickMe i byene, privat sjåfør via hotell mellom stedene</li>
+        <li><strong>Betaling:</strong> Kort funker ofte, men ha litt kontanter</li>
+        <li><strong>Helse:</strong> Flaskevann + solkrem hver dag</li>
+        <li><strong>Mindset:</strong> Ting går litt saktere – og det er poenget</li>
+      </ul>
+    </div>
+
+    <footer>
+      Dette er bare starten.<br />
+      Gleder meg helt ekstremt til å oppleve alt dette sammen med deg ❤️
+    </footer>
+
   </div>
-
-  <!-- FLY -->
-  <div class="card">
-    <h2>✈️ Flyreise</h2>
-    <p>
-      <strong>Qatar Airways</strong><br>
-      Bookingreferanse: <span class="mono">8XGTR2</span>
-    </p>
-    <p>
-      <strong>Utreise – 14. januar</strong><br>
-      Oslo 09:00 → Doha 17:30<br>
-      Doha 18:40 → Colombo 01:55 (+1)
-    </p>
-    <p>
-      <strong>Hjemreise – natt til 3. februar</strong><br>
-      Colombo 04:15 → Doha → Oslo 13:30
-    </p>
-  </div>
-
-  <!-- COLOMBO -->
-  <div class="card">
-    <h2>📍 Colombo</h2>
-    <div class="subtitle">14.–16. januar · 2 netter</div>
-    <div class="mood">Myk landing etter lang reise.</div>
-
-    <div class="place-image">
-      <img src="https://www.nh-hotels.com/sites/default/files/styles/nh_image_gallery/public/nh_collection_colombo_exterior.jpg" alt="NH Collection Colombo">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1586185113245-4d4f8c7d8f9a?q=80&w=1600&auto=format&fit=crop" alt="Colombo skyline">
-    </div>
-
-    <p>
-      Vi lander midt på natten og går rett på hotell.
-      Dette er valgt kun for komfort: sove godt, våkne sakte og lande i ferien.
-    </p>
-
-    <div class="meta">
-      NH Collection Colombo · Expedia<br>
-      Booking: <span class="mono">72069181874349</span>
-    </div>
-  </div>
-
-  <!-- WELIGAMA -->
-  <div class="card">
-    <h2>🌊 Weligama</h2>
-    <div class="subtitle">16.–20. januar · 4 netter</div>
-    <div class="mood">Her starter strandlivet.</div>
-
-    <div class="place-image">
-      <img src="https://www.marriott.com/content/dam/marriott-renditions/WELBR/welbr-exterior-0001.jpg" alt="Weligama Bay Marriott">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1602002418670-8f3bfa6b7f44?q=80&w=1600&auto=format&fit=crop" alt="Weligama beach">
-    </div>
-
-    <p>
-      Store rom, strand rett utenfor døren og null krav.
-      Surf når vi vil, bade når vi vil – eller gjøre ingenting.
-    </p>
-
-    <div class="meta">
-      Weligama Bay Marriott · Expedia<br>
-      Booking: <span class="mono">72069183729375</span>
-    </div>
-  </div>
-
-  <!-- TANGALLE -->
-  <div class="card">
-    <h2>🏝️ Tangalle</h2>
-    <div class="subtitle">20.–24. januar · 4 netter</div>
-    <div class="mood">Rolige dager uten klokke.</div>
-
-    <div class="place-image">
-      <img src="https://shivasbeachcabanas.com/images/gallery/beach-cabanas.jpg" alt="Shiva’s Beach Cabanas">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1590677147860-6226c6b7f4c4?q=80&w=1600&auto=format&fit=crop" alt="Tangalle beach">
-    </div>
-
-    <p>
-      Små strandhytter, lyden av havet og veldig lite som skjer.
-      Dette er stedet for å bare være.
-    </p>
-
-    <div class="meta">
-      Shiva’s Beach Cabanas · Booking.com<br>
-      Booking: <span class="mono">5779024415</span>
-    </div>
-  </div>
-
-  <!-- UDAWALAWE -->
-  <div class="card">
-    <h2>🐘 Udawalawe</h2>
-    <div class="subtitle">24.–26. januar · 2 netter</div>
-    <div class="mood">Et lite safari-eventyr.</div>
-
-    <div class="place-image">
-      <img src="https://www.elephanttrail.lk/images/gallery/elephanttrail-lodge.jpg" alt="Elephant Trail Lodge">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1543248939-4296e1fea89b?q=80&w=1600&auto=format&fit=crop" alt="Elephants in Udawalawe">
-    </div>
-
-    <p>
-      Tidlige morgener, elefanter og helt annen stemning enn ved kysten.
-    </p>
-
-    <div class="meta">
-      Elephant Trail · Booking.com<br>
-      Booking: <span class="mono">5948566641</span>
-    </div>
-  </div>
-
-  <!-- UNAWATUNA -->
-  <div class="card">
-    <h2>🌴 Unawatuna / Galle</h2>
-    <div class="subtitle">26. jan – 1. feb · 6 netter</div>
-    <div class="mood">Ferieferie.</div>
-
-    <div class="place-image">
-      <img src="https://www.thawthisa.com/wp-content/uploads/2022/03/jungle-village-pool.jpg" alt="Jungle Village by Thawthisa">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1600172454520-134a8b8c8f45?q=80&w=1600&auto=format&fit=crop" alt="Unawatuna beach">
-    </div>
-
-    <p>
-      Grønt, stille og perfekt base for strand, snorkling og små turer.
-    </p>
-
-    <div class="meta">
-      Jungle Village by Thawthisa · Expedia<br>
-      Booking: <span class="mono">72069183025778</span>
-    </div>
-  </div>
-
-  <!-- SISTE NATT -->
-  <div class="card">
-    <h2>🍸 Siste kveld – Colombo</h2>
-    <div class="subtitle">1.–2. februar · 1 natt</div>
-
-    <div class="place-image">
-      <img src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/ratnadipa/gallery/exterior.jpg" alt="ITC Ratnadipa Colombo">
-    </div>
-
-    <div class="place-image">
-      <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1600&auto=format&fit=crop" alt="Luxury rooftop pool">
-    </div>
-
-    <p>
-      Siste kveld før hjemreise. God middag, rolig tempo og pakke i fred.
-    </p>
-
-    <div class="meta">
-      ITC Ratnadipa · Expedia<br>
-      Booking: <span class="mono">72069184492710</span>
-    </div>
-  </div>
-
-  <footer>
-    Dette er bare starten.  
-    Gleder meg helt ekstremt til å oppleve alt dette sammen med deg ❤️
-  </footer>
-
-</div>
 </body>
 </html>
+```0
