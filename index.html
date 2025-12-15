@@ -57,9 +57,31 @@
     }
 
     h2{
-      margin:0 0 8px 0;
+      margin:0 0 6px 0;
       font-size:1.25rem;
       text-align:center;
+    }
+
+    .subtitle{
+      text-align:center;
+      font-size:0.95rem;
+      color:var(--muted);
+      margin-bottom:6px;
+    }
+
+    .mood{
+      text-align:center;
+      font-size:0.95rem;
+      font-style:italic;
+      color:#666;
+      margin-bottom:8px;
+    }
+
+    .hotel-note{
+      text-align:center;
+      font-size:0.93rem;
+      color:#555;
+      margin-bottom:10px;
     }
 
     p{
@@ -128,6 +150,14 @@
     </p>
   </div>
 
+  <!-- INTRO -->
+  <div class="card">
+    <p style="text-align:center;">
+      Dette er vår lille reiseguide.<br>
+      Alt under er forslag – planen er å ta dagene som de kommer ✨
+    </p>
+  </div>
+
   <!-- FLY -->
   <div class="card">
     <h2>✈️ Flyreise</h2>
@@ -148,59 +178,137 @@
       CMB 04:15 → DOH 06:45 (QR663)<br>
       DOH 08:30 → OSL 13:30 (QR175)
     </p>
-
-    <p class="meta">
-      Innsjekk anbefalt minst 3 timer før avreise.<br>
-      All håndtering av seter, bagasje og endringer gjøres i Qatar Airways-appen.
-    </p>
   </div>
 
   <!-- TIMELINE -->
   <div class="card">
     <h2>🗓️ Tidslinje</h2>
-
     <div class="timeline">
-      <div class="event">
-        <strong>14.–16. jan</strong> – Colombo<br>
-        <span>Myk landing etter nattfly</span>
-      </div>
-
-      <div class="event">
-        <strong>16.–20. jan</strong> – Weligama<br>
-        <span>Strand, surf og feriemodus</span>
-      </div>
-
-      <div class="event">
-        <strong>20.–24. jan</strong> – Tangalle<br>
-        <span>Rolige dager ved havet</span>
-      </div>
-
-      <div class="event">
-        <strong>24.–26. jan</strong> – Udawalawe<br>
-        <span>Safari og natur</span>
-      </div>
-
-      <div class="event">
-        <strong>26. jan – 1. feb</strong> – Unawatuna / Galle<br>
-        <span>Strand, mat og lange kvelder</span>
-      </div>
-
-      <div class="event">
-        <strong>1.–2. feb</strong> – Colombo<br>
-        <span>Siste kveld før hjemreise</span>
-      </div>
+      <div class="event"><strong>14.–16. jan</strong> – Colombo<br><span>Myk landing</span></div>
+      <div class="event"><strong>16.–20. jan</strong> – Weligama<br><span>Strand & surf</span></div>
+      <div class="event"><strong>20.–24. jan</strong> – Tangalle<br><span>Rolige dager</span></div>
+      <div class="event"><strong>24.–26. jan</strong> – Udawalawe<br><span>Safari</span></div>
+      <div class="event"><strong>26. jan–1. feb</strong> – Unawatuna / Galle<br><span>Ferieferie</span></div>
+      <div class="event"><strong>1.–2. feb</strong> – Colombo<br><span>Siste kveld</span></div>
     </div>
   </div>
 
-  <!-- PRAKTISK INFO -->
+  <!-- HOTELLER (ALLE BEHOLDT) -->
+
+  <!-- Colombo -->
+  <div class="card">
+    <h2>📍 Colombo</h2>
+    <div class="subtitle">14.–16. januar · 2 netter</div>
+    <div class="mood">Myk landing etter lang reise.</div>
+    <div class="hotel-note">Moderne byhotell med rooftop-basseng og utsikt mot havet.</div>
+
+    <ul>
+      <li>Rooftop-pool og ro</li>
+      <li>God lunsj og kaffe</li>
+    </ul>
+
+    <div class="meta">
+      Hotell: NH Collection Colombo<br>
+      Booking: Expedia · <span class="mono">72069181874349</span><br>
+      Reisetid videre: ca. 2,5–3 t
+    </div>
+  </div>
+
+  <!-- Weligama -->
+  <div class="card">
+    <h2>🌊 Weligama</h2>
+    <div class="subtitle">16.–20. januar · 4 netter</div>
+    <div class="mood">Her starter strandlivet.</div>
+    <div class="hotel-note">Strandresort med basseng og direkte tilgang til havet.</div>
+
+    <ul>
+      <li>Surf og strand</li>
+      <li>Middager i solnedgangen</li>
+    </ul>
+
+    <div class="meta">
+      Hotell: Weligama Bay Marriott Resort & Spa<br>
+      Booking: Expedia · <span class="mono">72069183729375</span><br>
+      Reisetid videre: ca. 1,5–2 t
+    </div>
+  </div>
+
+  <!-- Tangalle -->
+  <div class="card">
+    <h2>🏝️ Tangalle</h2>
+    <div class="subtitle">20.–24. januar · 4 netter</div>
+    <div class="mood">Der dagene flyter.</div>
+    <div class="hotel-note">Små strandhytter rett ved havet – stille og personlig.</div>
+
+    <ul>
+      <li>Rolige stranddager</li>
+      <li>Lange kvelder</li>
+    </ul>
+
+    <div class="meta">
+      Hotell: Shiva’s Beach Cabanas<br>
+      Booking: Booking.com · <span class="mono">5779024415</span><br>
+      Reisetid videre: ca. 2–2,5 t
+    </div>
+  </div>
+
+  <!-- Udawalawe -->
+  <div class="card">
+    <h2>🐘 Udawalawe</h2>
+    <div class="subtitle">24.–26. januar · 2 netter</div>
+    <div class="mood">Et lite eventyr.</div>
+    <div class="hotel-note">Liten lodge med basseng nær nasjonalparken.</div>
+
+    <ul>
+      <li>Safari morgen og ettermiddag</li>
+    </ul>
+
+    <div class="meta">
+      Hotell: Elephant Trail<br>
+      Booking: Booking.com · <span class="mono">5948566641</span><br>
+      Reisetid videre: ca. 2,5–3,5 t
+    </div>
+  </div>
+
+  <!-- Unawatuna -->
+  <div class="card">
+    <h2>🌴 Unawatuna / Galle</h2>
+    <div class="subtitle">26. januar – 1. februar · 6 netter</div>
+    <div class="mood">Ferieferie.</div>
+    <div class="hotel-note">Grønt og stille jungelhotell med basseng.</div>
+
+    <ul>
+      <li>Strand og snorkling</li>
+      <li>Dagstur til Galle</li>
+    </ul>
+
+    <div class="meta">
+      Hotell: Jungle Village by Thawthisa<br>
+      Booking: Expedia · <span class="mono">72069183025778</span><br>
+      Reisetid videre: ca. 2–2,5 t
+    </div>
+  </div>
+
+  <!-- Siste natt -->
+  <div class="card">
+    <h2>🍸 Siste kveld – Colombo</h2>
+    <div class="subtitle">1.–2. februar · 1 natt</div>
+    <div class="mood">Rolig avslutning.</div>
+    <div class="hotel-note">Nytt luksushotell ved Galle Face.</div>
+
+    <div class="meta">
+      Hotell: ITC Ratnadipa Colombo<br>
+      Booking: Expedia · <span class="mono">72069184492710</span>
+    </div>
+  </div>
+
+  <!-- PRAKTISK -->
   <div class="card">
     <h2>🧭 Praktisk info</h2>
     <ul>
-      <li><strong>Mobil:</strong> Dialog har best dekning. SIM kjøpes på flyplassen.</li>
-      <li><strong>Taxi:</strong> PickMe i byene. Privat sjåfør via hotell ellers.</li>
-      <li><strong>Reisetider:</strong> Mellom stedene ca. 1,5–3,5 timer.</li>
-      <li><strong>Betaling:</strong> Kort funker de fleste steder, ha litt kontanter.</li>
-      <li><strong>Tempo:</strong> Ting går litt saktere – og det er helt fint.</li>
+      <li>Mobil: Dialog SIM fra flyplassen</li>
+      <li>Taxi: PickMe / privat sjåfør via hotell</li>
+      <li>Reisetid: 1,5–3,5 t mellom stedene</li>
     </ul>
   </div>
 
