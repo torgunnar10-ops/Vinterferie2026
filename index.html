@@ -25,19 +25,20 @@
       justify-content:center;
     }
 
-    .wrap{ max-width:800px; width:100%; }
+    .wrap{ max-width:820px; width:100%; }
 
     .hero{
       background:var(--hero);
-      border-radius:20px;
-      padding:38px 28px;
+      border-radius:22px;
+      padding:40px 28px;
       text-align:center;
       margin-bottom:18px;
     }
 
     .hero h1{
       margin:0 0 10px 0;
-      font-size:2.1rem;
+      font-size:2.2rem;
+      letter-spacing:-0.5px;
     }
 
     .hero p{
@@ -50,14 +51,14 @@
     .card{
       background:var(--card);
       border-radius:16px;
-      padding:18px 20px;
+      padding:18px 22px;
       margin-bottom:16px;
       box-shadow:0 2px 10px rgba(0,0,0,0.06);
     }
 
     h2{
       margin:0 0 4px 0;
-      font-size:1.2rem;
+      font-size:1.25rem;
       text-align:center;
     }
 
@@ -65,7 +66,7 @@
       text-align:center;
       font-size:0.95rem;
       color:var(--muted);
-      margin-bottom:10px;
+      margin-bottom:8px;
     }
 
     .mood{
@@ -107,7 +108,7 @@
       text-align:center;
       font-size:0.95rem;
       color:#666;
-      margin-top:22px;
+      margin:26px 0 10px;
     }
   </style>
 </head>
@@ -130,7 +131,7 @@
   <div class="card">
     <p style="text-align:center;">
       Dette er vår lille reiseguide.<br>
-      Alt under er forslag – planen er å ta dagene som de kommer ✨
+      Alt under er bare forslag – planen er å ta dagene som de kommer ✨
     </p>
   </div>
 
@@ -140,22 +141,17 @@
     <div class="subtitle">14.–16. januar · 2 netter</div>
     <div class="mood">Myk landing etter lang reise – bare puste ut.</div>
 
-    <p>
-      Vi lander midt på natten og drar rett på hotell.
-      Første dagen handler om å komme i feriemodus før vi reiser videre sørover.
-    </p>
-
     <ul>
-      <li>Rooftop-pool og ro</li>
+      <li>Rooftop-pool og rolig start</li>
       <li>God lunsj og kaffe</li>
-      <li>Kort rusletur hvis vi har lyst</li>
+      <li>Kort rusletur hvis vi orker</li>
     </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> NH Collection Colombo<br>
       <strong>Booking:</strong> Expedia · <span class="mono">72069181874349</span><br>
-      <strong>Videre reise:</strong> Colombo → Weligama ca. 2,5–3 t
-    </p>
+      <strong>Videre:</strong> Colombo → Weligama ca. 2,5–3 t
+    </div>
   </div>
 
   <!-- WELIGAMA -->
@@ -164,22 +160,17 @@
     <div class="subtitle">16.–20. januar · 4 netter</div>
     <div class="mood">Sol, saltvann og dager uten klokke.</div>
 
-    <p>
-      Her starter stranddelen for alvor.
-      Litt surf, mye avslapping og fine kvelder sammen.
-    </p>
-
     <ul>
-      <li>Leie surfebrett (evt. litt kurs)</li>
+      <li>Litt surf (leie brett / evt. kurs)</li>
       <li>Strand og basseng</li>
       <li>Gode middager i solnedgangen</li>
     </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> Weligama Bay Marriott Resort & Spa<br>
       <strong>Booking:</strong> Expedia · <span class="mono">72069183729375</span><br>
-      <strong>Videre reise:</strong> Weligama → Tangalle ca. 1,5–2 t
-    </p>
+      <strong>Videre:</strong> Weligama → Tangalle ca. 1,5–2 t
+    </div>
   </div>
 
   <!-- TANGALLE -->
@@ -188,22 +179,17 @@
     <div class="subtitle">20.–24. januar · 4 netter</div>
     <div class="mood">Der dagene sklir litt over i hverandre.</div>
 
-    <p>
-      Mer stillhet, strandhytte og god tid.
-      Dette er stedet for lange morgener og rolige kvelder.
-    </p>
-
     <ul>
       <li>Rolige stranddager</li>
       <li>Snorkling hvis forholdene er fine</li>
       <li>God mat og bare oss to</li>
     </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> Shiva’s Beach Cabanas<br>
       <strong>Booking:</strong> Booking.com · <span class="mono">5779024415</span><br>
-      <strong>Videre reise:</strong> Tangalle → Udawalawe ca. 2–2,5 t
-    </p>
+      <strong>Videre:</strong> Tangalle → Udawalawe ca. 2–2,5 t
+    </div>
   </div>
 
   <!-- UDAWALAWE -->
@@ -212,22 +198,17 @@
     <div class="subtitle">24.–26. januar · 2 netter</div>
     <div class="mood">Litt eventyr midt i roen.</div>
 
-    <p>
-      Safari og natur – et lite avbrekk fra stranden
-      før vi drar tilbake til kysten igjen.
-    </p>
-
     <ul>
       <li>Ettermiddags- og morgensafari</li>
       <li>Elefanter og morgensol</li>
       <li>Rolig tempo mellom turene</li>
     </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> Elephant Trail<br>
       <strong>Booking:</strong> Booking.com · <span class="mono">5948566641</span><br>
-      <strong>Videre reise:</strong> Udawalawe → Unawatuna ca. 2,5–3,5 t
-    </p>
+      <strong>Videre:</strong> Udawalawe → Unawatuna ca. 2,5–3,5 t
+    </div>
   </div>
 
   <!-- UNAWATUNA -->
@@ -236,52 +217,52 @@
     <div class="subtitle">26. januar – 1. februar · 6 netter</div>
     <div class="mood">Ferieferie – strand, mat og lange kvelder.</div>
 
-    <p>
-      Tilbake til havet.
-      Strand, snorkling og Galle i rolig tempo.
-    </p>
-
     <ul>
       <li>Strand og snorkling</li>
       <li>Dagstur til Galle Fort</li>
       <li>Lange kvelder ute sammen</li>
     </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> Jungle Village by Thawthisa<br>
       <strong>Booking:</strong> Expedia · <span class="mono">72069183025778</span><br>
-      <strong>Videre reise:</strong> Unawatuna → Colombo ca. 2–2,5 t
-    </p>
+      <strong>Videre:</strong> Unawatuna → Colombo ca. 2–2,5 t
+    </div>
   </div>
 
   <!-- COLOMBO SLUTT -->
   <div class="card">
     <h2>🍸 Siste kveld – Colombo</h2>
     <div class="subtitle">1.–2. februar · 1 natt</div>
-    <div class="mood">En rolig avslutning før hjemreise.</div>
+    <div class="mood">Rolig avslutning før hjemreise.</div>
 
-    <p>
-      En siste god middag og noen drinker,
-      før vi drar til flyplassen sent på kvelden og sover på flyet hjem.
-    </p>
+    <ul>
+      <li>Siste gode middag</li>
+      <li>Noen drinker før nattlig avreise</li>
+    </ul>
 
-    <p class="meta">
+    <div class="meta">
       <strong>Hotell:</strong> ITC Ratnadipa, Colombo<br>
       <strong>Booking:</strong> Expedia · <span class="mono">72069184492710</span>
-    </p>
+    </div>
   </div>
 
-  <!-- KORT KOST -->
+  <!-- PRAKTISK INFO -->
   <div class="card">
-    <h2>💰 Kort oppsummering</h2>
-    <p>
-      Overnatting totalt: ca. <strong>35 200 NOK</strong><br>
-      Resten tar vi løpende og finner ut av underveis 💛
-    </p>
+    <h2>🧭 Praktisk info</h2>
+
+    <ul>
+      <li><strong>Taxi:</strong> PickMe (som Uber). Ellers ordner hotellene sjåfør.</li>
+      <li><strong>Transport mellom byer:</strong> Privat sjåfør via hotell – komfortabelt og enkelt.</li>
+      <li><strong>Betaling:</strong> Kort funker de fleste steder. Litt kontanter er greit.</li>
+      <li><strong>SIM:</strong> Kjøpes på flyplassen (Dialog eller Mobitel).</li>
+      <li><strong>Safari:</strong> Bestilles lokalt via hotellet i Udawalawe.</li>
+      <li><strong>Tempo:</strong> Dette er ferie. Hvis vi vil bli på stranden hele dagen, gjør vi det.</li>
+    </ul>
   </div>
 
   <footer>
-    Dette er bare første kapittel.<br>
+    Dette er bare starten.<br>
     Gleder meg helt ekstremt til å oppleve alt dette sammen med deg ❤️
   </footer>
 
