@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Sri Lanka 2026 – Tor & Petter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     :root{
       --bg:#f8f4f2;
-      --hero:#fde9e3;      /* header-boks i annen farge */
+      --hero:#fde9e3;
       --card:#ffffff;
-      --text:#333333;
-      --muted:#777777;
-      --line:#eee6e2;
-      --soft:#fff7f4;
+      --text:#333;
+      --muted:#777;
+      --line:#eee;
     }
-
-    *{ box-sizing:border-box; }
 
     body{
       margin:0;
       padding:20px;
-      font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background:var(--bg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
       color:var(--text);
       display:flex;
       justify-content:center;
     }
 
-    .wrap{ max-width:920px; width:100%; }
+    .wrap{ max-width:800px; width:100%; }
 
     .hero{
       background:var(--hero);
       border-radius:20px;
-      padding:40px 30px;
+      padding:36px 28px;
       text-align:center;
       margin-bottom:18px;
-      box-shadow:0 3px 12px rgba(0,0,0,0.07);
     }
 
     .hero h1{
       margin:0 0 10px 0;
-      font-size:2.2rem;
-      font-weight:650;
-      letter-spacing:-0.5px;
+      font-size:2.1rem;
     }
 
     .hero p{
       margin:0;
-      font-size:1.06rem;
+      font-size:1.05rem;
       line-height:1.55;
-      color:#574d49;
-    }
-
-    .meta{
-      margin-top:10px;
-      font-size:0.95rem;
-      color:#6a615d;
+      color:#5a4f4b;
     }
 
     .card{
       background:var(--card);
       border-radius:16px;
-      padding:18px 20px 20px;
+      padding:18px 20px;
       margin-bottom:16px;
-      box-shadow:0 2px 10px rgba(0,0,0,0.07);
+      box-shadow:0 2px 10px rgba(0,0,0,0.06);
     }
 
-    .card h2{
-      margin:0 0 10px 0;
+    h2{
+      margin:0 0 6px 0;
       font-size:1.2rem;
       text-align:center;
     }
@@ -81,423 +69,204 @@
     }
 
     p{
-      margin:0.45rem 0;
+      margin:0.4rem 0;
       line-height:1.6;
-      font-size:0.98rem;
+      font-size:0.97rem;
     }
 
-    .pillrow{ text-align:center; margin-top:8px; }
-    .pill{
-      display:inline-block;
-      padding:4px 10px;
-      border-radius:999px;
-      background:var(--soft);
-      border:1px solid var(--line);
-      font-size:0.9rem;
-      color:#514a46;
-      margin:6px 6px 0 0;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:14px;
-      margin-top:10px;
-    }
-
-    .box{
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:12px 14px;
-      background:#fff;
-    }
-
-    .box strong{ display:block; margin-bottom:6px; }
-
-    .muted{ color:var(--muted); }
-
-    ul{ margin:0.35rem 0 0.2rem; padding-left:1.2rem; }
-    li{ margin:0.22rem 0; }
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:10px;
+    ul{
+      margin:0.4rem 0 0.2rem;
+      padding-left:1.2rem;
       font-size:0.95rem;
     }
 
-    th, td{
-      text-align:left;
-      padding:10px 8px;
-      border-bottom:1px solid var(--line);
-      vertical-align:top;
-    }
+    li{ margin:0.25rem 0; }
 
-    th{
-      font-weight:650;
-      color:#514a46;
-      background:var(--soft);
+    .meta{
+      margin-top:8px;
+      font-size:0.9rem;
+      color:var(--muted);
       border-top:1px solid var(--line);
+      padding-top:8px;
     }
 
-    .num{ text-align:right; white-space:nowrap; }
-    .small{ font-size:0.92rem; }
-    .mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
-    .img-wrap{
-      margin-top:12px;
-      border-radius:14px;
-      overflow:hidden;
+    .mono{
+      font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size:0.88rem;
     }
-    .img-wrap img{ width:100%; display:block; }
 
     footer{
       text-align:center;
       font-size:0.9rem;
       color:var(--muted);
       margin-top:18px;
-      padding-bottom:12px;
-    }
-
-    @media (max-width:760px){
-      body{ padding:14px; }
-      .hero{ padding:34px 20px; }
-      .hero h1{ font-size:1.8rem; }
-      .hero p{ font-size:1rem; }
-      .grid{ grid-template-columns:1fr; }
-      th, td{ padding:9px 6px; }
     }
   </style>
 </head>
 
 <body>
-  <div class="wrap">
+<div class="wrap">
 
-    <div class="hero">
-      <h1>Sri Lanka 2026 – Tor & Petter</h1>
-      <p>🥥🌅 Et lite eventyr i varmen, langt unna vinteren. Sol, strender, god mat – og masse tid bare for oss.</p>
-      <div class="meta">Total periode: 14. januar – 2. februar 2026 · Valutakurs: 1 USD = 10,7 NOK</div>
-
-      <div class="pillrow">
-        <span class="pill">☀️ Sol og strand</span>
-        <span class="pill">🐘 Safari</span>
-        <span class="pill">🤿 Dykking/snorkling</span>
-        <span class="pill">🏄 Surf</span>
-        <span class="pill">🍤 God mat</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Fasit: bookingoversikt og kostnadsfordeling</h2>
-      <p style="text-align:center; margin-bottom:0.2rem;">
-        Komplett, presis og etterprøvbar oversikt med datoer, referanser, betaler og priser.
-      </p>
-      <p class="subtitle">Tips: Hvis du vil, kan du legge inn alle referanser i Notes/WhatsApp og ha dette som “fasit-dokument”.</p>
-    </div>
-
-    <div class="card">
-      <h2>Rekkefølge og transport (kort)</h2>
-
-      <div class="grid">
-        <div class="box">
-          <strong>Colombo → Weligama</strong>
-          <div class="muted small">Ca. 2,5–3 timer med bil</div>
-          <p class="small">Plan: Rolig start i Colombo siden dere lander på natten, så videre sørover.</p>
-        </div>
-        <div class="box">
-          <strong>Weligama → Tangalle</strong>
-          <div class="muted small">Ca. 1,5–2 timer</div>
-          <p class="small">Plan: Strandliv + surf, deretter mer ro og cabana-stemning.</p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="box">
-          <strong>Tangalle → Udawalawe</strong>
-          <div class="muted small">Ca. 2–2,5 timer</div>
-          <p class="small">Plan: 2 netter safari. Safari i nasjonalparken ikke forhåndsbestilt.</p>
-        </div>
-        <div class="box">
-          <strong>Udawalawe → Unawatuna (Galle)</strong>
-          <div class="muted small">Ca. 2,5–3,5 timer</div>
-          <p class="small">Plan: Tilbake til kysten. Strand + Galle-opplevelser og god mat.</p>
-        </div>
-      </div>
-
-      <div class="grid">
-        <div class="box">
-          <strong>Unawatuna → Colombo</strong>
-          <div class="muted small">Ca. 2–2,5 timer</div>
-          <p class="small">Plan: Siste natt ved Galle Face / byen, middag og drinker før avreise.</p>
-        </div>
-        <div class="box">
-          <strong>Colombo sentrum → Flyplass (BIA)</strong>
-          <div class="muted small">Ca. 45–75 min (trafikkstyrt)</div>
-          <p class="small">Plan: Dere drar til flyplassen på natten og sover på flyet.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 1: COLOMBO -->
-    <div class="card">
-      <h2>1️⃣ Colombo (ankomst)</h2>
-      <p><strong>NH Collection Colombo</strong></p>
-      <p class="muted small">Onsdag 14. jan 2026 → fredag 16. jan 2026 · 2 netter</p>
-
-      <p class="small"><strong>Adresse:</strong> 24 Dharmapala Mawatha, Colombo 00300, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Expedia · <strong>Reiserutenummer:</strong> <span class="mono">72069181874349</span></p>
-      <p class="small"><strong>Rom:</strong> Superior Room (1 rom)</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> fra 14.00 · 12.00</p>
-
-      <p class="small"><strong>Pris:</strong> 1 746,82 NOK (inkl. skatter) · <strong>Bestilt og betalt av:</strong> Petter</p>
-      <p class="small"><strong>Avbestilling:</strong> Gratis til 7. jan 2026 kl. 16.00 (lokaltid)</p>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Rooftop-pool og rolig start etter nattankomst</li>
-        <li>God lunsj og kaffe</li>
-        <li>Kort bytur hvis energien er der</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/colombo.png" alt="Colombo">
-      </div>
-    </div>
-
-    <!-- 2: WELIGAMA -->
-    <div class="card">
-      <h2>2️⃣ Weligama</h2>
-      <p><strong>Weligama Bay Marriott Resort &amp; Spa</strong></p>
-      <p class="muted small">Fredag 16. jan 2026 → tirsdag 20. jan 2026 · 4 netter</p>
-
-      <p class="small"><strong>Adresse:</strong> 700 Matara Road, Pelana, Weligama 81700, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Expedia · <strong>Reiserutenummer:</strong> <span class="mono">72069183729375</span></p>
-      <p class="small"><strong>Rom:</strong> 1 kingsize-seng, havutsikt</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> fra 15.00 · 12.00</p>
-
-      <p class="small"><strong>Pris:</strong> 16 533,76 NOK (inkl. skatter og avgifter) · <strong>Bestilt og betalt av:</strong> Petter</p>
-      <p class="small"><strong>Avbestilling:</strong> Gratis til 9. jan 2026 kl. 23.59</p>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Surf (leie brett, evt. et par timer kurs)</li>
-        <li>Strandliv og rolig tempo</li>
-        <li>Gode middager og fine kvelder sammen</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/weligama.png" alt="Weligama">
-      </div>
-    </div>
-
-    <!-- 3: TANGALLE -->
-    <div class="card">
-      <h2>3️⃣ Tangalle</h2>
-      <p><strong>Shiva’s Beach Cabanas</strong></p>
-      <p class="muted small">Tirsdag 20. jan 2026 → lørdag 24. jan 2026 · 4 netter</p>
-
-      <p class="small"><strong>Adresse:</strong> Kapuhenwala Road, 82200 Tangalle, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Booking.com · <strong>Bekreftelsesnr:</strong> <span class="mono">5779024415</span> · <strong>PIN:</strong> <span class="mono">1968</span></p>
-      <p class="small"><strong>Rom:</strong> Strandhytte</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> 12.00–20.00 · 08.30–10.00</p>
-
-      <p class="small"><strong>Pris:</strong> USD 413,64 → 4 425 NOK · <strong>Bestilt og betalt av:</strong> Tor</p>
-      <p class="small"><strong>Avbestilling:</strong> Gratis til 16. jan 2026 kl. 23.59</p>
-
-      <p class="small"><strong>Valgfrie måltider (lokalt):</strong></p>
-      <ul class="small">
-        <li>Frokost: USD 5 pp</li>
-        <li>Lunsj: USD 8 pp</li>
-        <li>Middag: USD 12 pp</li>
-      </ul>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Rolige stranddager og solnedganger</li>
-        <li>God mat + “bare oss to”-kvelder</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/tangalle.png" alt="Tangalle">
-      </div>
-    </div>
-
-    <!-- 4: UDAWALAWE -->
-    <div class="card">
-      <h2>4️⃣ Udawalawe (safari)</h2>
-      <p><strong>Elephant Trail</strong></p>
-      <p class="muted small">Lørdag 24. jan 2026 → mandag 26. jan 2026 · 2 netter</p>
-
-      <p class="small"><strong>Adresse:</strong> No. 35, 5th Mile Post, Thanamalvila Road, Udawalawa 70190, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Booking.com · <strong>Bekreftelsesnr:</strong> <span class="mono">5948566641</span> · <strong>PIN:</strong> <span class="mono">2704</span></p>
-      <p class="small"><strong>Rom:</strong> Deluxe</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> 14.30–20.00 · 11.00</p>
-
-      <p class="small"><strong>Pris:</strong> USD 134,55 → 1 440 NOK · <strong>Bestilt og betalt av:</strong> Tor</p>
-      <p class="small"><strong>Inkludert:</strong> Frokost</p>
-      <p class="small"><strong>Merk:</strong> Safari i Udawalawe National Park er ikke forhåndsbestilt</p>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Ettermiddagssafari + morgensafari (elefanter)</li>
-        <li>Pool og ro mellom turene</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/udawalawe.png" alt="Udawalawe">
-      </div>
-    </div>
-
-    <!-- 5: UNAWATUNA -->
-    <div class="card">
-      <h2>5️⃣ Unawatuna / Galle</h2>
-      <p><strong>Jungle Village by Thawthisa</strong></p>
-      <p class="muted small">Mandag 26. jan 2026 → søndag 1. feb 2026 · 6 netter</p>
-
-      <p class="small"><strong>Adresse:</strong> Palawatta, Bonavista, Rumassala, Unawatuna, Galle District, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Expedia · <strong>Reiserutenummer:</strong> <span class="mono">72069183025778</span></p>
-      <p class="small"><strong>Boenhet:</strong> Alpehytte – Superior</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> fra 14.00 · 12.00</p>
-
-      <p class="small"><strong>Pris:</strong> 8 099,94 NOK · <strong>Bestilt og betalt av:</strong> Petter</p>
-      <p class="small"><strong>Avbestilling:</strong> Gratis til 24. jan 2026 kl. 18.00</p>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Strand og snorkling (rolig tempo)</li>
-        <li>Galle Fort: kaffe, små butikker og fin lunsj</li>
-        <li>Gode middager og kvelder ute sammen</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/unawatuna.png" alt="Unawatuna / Galle">
-      </div>
-    </div>
-
-    <!-- 6: COLOMBO FINAL -->
-    <div class="card">
-      <h2>6️⃣ Colombo (avslutning)</h2>
-      <p><strong>ITC Ratnadipa, a Luxury Collection Hotel</strong></p>
-      <p class="muted small">Søndag 1. feb 2026 → mandag 2. feb 2026 · 1 natt</p>
-
-      <p class="small"><strong>Adresse:</strong> Galle Face Centre Road, Colombo 00300, Sri Lanka</p>
-      <p class="small"><strong>Plattform:</strong> Expedia · <strong>Reiserutenummer:</strong> <span class="mono">72069184492710</span></p>
-      <p class="small"><strong>Rom:</strong> 1 kingsize-seng, balkong, byutsikt</p>
-      <p class="small"><strong>Inkludert:</strong> Frokost + internett</p>
-      <p class="small"><strong>Innsjekk/utsjekk:</strong> 15.00 · 12.00</p>
-
-      <p class="small"><strong>Pris:</strong> 2 942,92 NOK · <strong>Bestilt og betalt av:</strong> Petter</p>
-      <p class="small"><strong>Avbestilling:</strong> Gratis til 30. jan 2026 kl. 23.59</p>
-
-      <p class="small"><strong>Forslag til aktiviteter:</strong></p>
-      <ul class="small">
-        <li>Siste middag + et par drinker (rolig avslutning)</li>
-        <li>Ta det helt med ro før nattlig avreise til flyplassen</li>
-      </ul>
-
-      <div class="img-wrap">
-        <img src="images/colombo.png" alt="Colombo siste natt">
-      </div>
-    </div>
-
-    <!-- COST SUMMARY -->
-    <div class="card">
-      <h2>💰 Kostnadsfordeling (NOK)</h2>
-      <p class="subtitle">Alle beløp i NOK. USD er omregnet med 1 USD = 10,7 NOK.</p>
-
-      <div class="grid">
-        <div class="box">
-          <strong>Tor</strong>
-          <ul class="small">
-            <li>Shiva’s Beach Cabanas: 4 425</li>
-            <li>Elephant Trail: 1 440</li>
-          </ul>
-          <p><strong>Sum Tor:</strong> 5 865 NOK</p>
-        </div>
-
-        <div class="box">
-          <strong>Petter</strong>
-          <ul class="small">
-            <li>NH Collection Colombo: 1 746,82</li>
-            <li>Weligama Bay Marriott: 16 533,76</li>
-            <li>Jungle Village by Thawthisa: 8 099,94</li>
-            <li>ITC Ratnadipa: 2 942,92</li>
-          </ul>
-          <p><strong>Sum Petter:</strong> 29 323,44 NOK</p>
-        </div>
-      </div>
-
-      <div class="box" style="margin-top:14px;">
-        <strong>Totalt overnatting</strong>
-        <p><strong>35 188 NOK</strong></p>
-        <p class="muted small" style="margin-top:6px;">
-          Realitetssjekk: Petter har per nå betalt ca. 83 % av overnattingene, Tor ca. 17 %.
-          Hvis dere vil jevne ut, kan transport, safari, mat og løpende utgifter tas av Tor eller avregnes etter turen.
-        </p>
-      </div>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Sted / hotell</th>
-            <th>Dato</th>
-            <th>Ref</th>
-            <th class="num">Pris (NOK)</th>
-            <th>Betalt av</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>NH Collection Colombo</strong></td>
-            <td>14.–16. jan (2 netter)</td>
-            <td class="mono">Expedia 72069181874349</td>
-            <td class="num">1 746,82</td>
-            <td>Petter</td>
-          </tr>
-          <tr>
-            <td><strong>Weligama Bay Marriott</strong></td>
-            <td>16.–20. jan (4 netter)</td>
-            <td class="mono">Expedia 72069183729375</td>
-            <td class="num">16 533,76</td>
-            <td>Petter</td>
-          </tr>
-          <tr>
-            <td><strong>Shiva’s Beach Cabanas</strong></td>
-            <td>20.–24. jan (4 netter)</td>
-            <td class="mono">Booking 5779024415 · PIN 1968</td>
-            <td class="num">4 425</td>
-            <td>Tor</td>
-          </tr>
-          <tr>
-            <td><strong>Elephant Trail</strong></td>
-            <td>24.–26. jan (2 netter)</td>
-            <td class="mono">Booking 5948566641 · PIN 2704</td>
-            <td class="num">1 440</td>
-            <td>Tor</td>
-          </tr>
-          <tr>
-            <td><strong>Jungle Village by Thawthisa</strong></td>
-            <td>26. jan–1. feb (6 netter)</td>
-            <td class="mono">Expedia 72069183025778</td>
-            <td class="num">8 099,94</td>
-            <td>Petter</td>
-          </tr>
-          <tr>
-            <td><strong>ITC Ratnadipa</strong></td>
-            <td>1.–2. feb (1 natt)</td>
-            <td class="mono">Expedia 72069184492710</td>
-            <td class="num">2 942,92</td>
-            <td>Petter</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <footer>
-      Dette er vår første ferie sammen – og bare begynnelsen. ❤️
-    </footer>
-
+  <div class="hero">
+    <h1>Sri Lanka 2026 – Tor & Petter</h1>
+    <p>
+      🥥🌅 Vi rømmer fra vinteren og inn i varmen.<br>
+      Sol, strender, god mat – og masse tid bare oss to.
+    </p>
+    <p style="margin-top:8px;">
+      14. januar – 2. februar 2026 ❤️
+    </p>
   </div>
+
+  <div class="card">
+    <p style="text-align:center;">
+      Dette er en enkel oversikt over reisen vår.<br>
+      Aktivitetene er bare forslag – planen er å ta dagene som de kommer ✨
+    </p>
+  </div>
+
+  <!-- COLOMBO -->
+  <div class="card">
+    <h2>📍 Colombo (ankomst)</h2>
+    <div class="subtitle">14.–16. januar · 2 netter</div>
+
+    <p>
+      Vi lander midt på natten og skal rett på hotell.
+      Første dagen er satt av til ro, basseng på taket og å lande litt i feriemodus.
+    </p>
+
+    <ul>
+      <li>Rooftop-pool</li>
+      <li>God lunsj og kaffe</li>
+      <li>Rolig start før vi drar sørover</li>
+    </ul>
+
+    <div class="meta">
+      <strong>Hotell:</strong> NH Collection Colombo<br>
+      <strong>Booking:</strong> Expedia · <span class="mono">72069181874349</span>
+    </div>
+  </div>
+
+  <!-- WELIGAMA -->
+  <div class="card">
+    <h2>🌊 Weligama</h2>
+    <div class="subtitle">16.–20. januar · 4 netter</div>
+
+    <p>
+      Strand, varme dager og litt surf.
+      Ingen stress – bare gjøre det vi har lyst til.
+    </p>
+
+    <ul>
+      <li>Leie surfebrett (evt. litt kurs)</li>
+      <li>Strandliv og basseng</li>
+      <li>Gode middager på kvelden</li>
+    </ul>
+
+    <div class="meta">
+      <strong>Hotell:</strong> Weligama Bay Marriott Resort & Spa<br>
+      <strong>Booking:</strong> Expedia · <span class="mono">72069183729375</span>
+    </div>
+  </div>
+
+  <!-- TANGALLE -->
+  <div class="card">
+    <h2>🏝️ Tangalle</h2>
+    <div class="subtitle">20.–24. januar · 4 netter</div>
+
+    <p>
+      Litt mer stille tempo.
+      Strandhytte, solnedganger og kvelder uten planer.
+    </p>
+
+    <ul>
+      <li>Rolige stranddager</li>
+      <li>Snorkling hvis forholdene er fine</li>
+      <li>God mat og tid sammen</li>
+    </ul>
+
+    <div class="meta">
+      <strong>Hotell:</strong> Shiva’s Beach Cabanas<br>
+      <strong>Booking:</strong> Booking.com · <span class="mono">5779024415</span>
+    </div>
+  </div>
+
+  <!-- UDAWALAWE -->
+  <div class="card">
+    <h2>🐘 Udawalawe</h2>
+    <div class="subtitle">24.–26. januar · 2 netter</div>
+
+    <p>
+      Safari og natur.
+      Litt eventyr midt i reisen før vi drar tilbake til kysten.
+    </p>
+
+    <ul>
+      <li>Ettermiddags- og morgensafari</li>
+      <li>Elefanter og morgensol</li>
+      <li>Rolig tempo mellom turene</li>
+    </ul>
+
+    <div class="meta">
+      <strong>Hotell:</strong> Elephant Trail<br>
+      <strong>Booking:</strong> Booking.com · <span class="mono">5948566641</span>
+    </div>
+  </div>
+
+  <!-- UNAWATUNA -->
+  <div class="card">
+    <h2>🌴 Unawatuna / Galle</h2>
+    <div class="subtitle">26. januar – 1. februar · 6 netter</div>
+
+    <p>
+      Strand, snorkling og gode måltider.
+      Dette blir nok den mest “ferie-ferie”-delen av turen.
+    </p>
+
+    <ul>
+      <li>Strand og snorkling</li>
+      <li>Dagstur til Galle Fort</li>
+      <li>Lange kvelder ute sammen</li>
+    </ul>
+
+    <div class="meta">
+      <strong>Hotell:</strong> Jungle Village by Thawthisa<br>
+      <strong>Booking:</strong> Expedia · <span class="mono">72069183025778</span>
+    </div>
+  </div>
+
+  <!-- COLOMBO SLUTT -->
+  <div class="card">
+    <h2>🍸 Siste kveld – Colombo</h2>
+    <div class="subtitle">1.–2. februar · 1 natt</div>
+
+    <p>
+      En siste god middag og noen drinker,
+      før vi drar til flyplassen sent på kvelden og sover på flyet hjem.
+    </p>
+
+    <div class="meta">
+      <strong>Hotell:</strong> ITC Ratnadipa, Colombo<br>
+      <strong>Booking:</strong> Expedia · <span class="mono">72069184492710</span>
+    </div>
+  </div>
+
+  <!-- KORT KOSTNADSOPPSUMMERING -->
+  <div class="card">
+    <h2>💰 Kort oppsummering</h2>
+    <p>
+      Overnatting totalt: ca. <strong>35 200 NOK</strong><br>
+      (Petter ca. 83 %, Tor ca. 17 %)
+    </p>
+    <p class="muted">
+      Resten tar vi løpende og finner ut av underveis ❤️
+    </p>
+  </div>
+
+  <footer>
+    Gleder meg helt ekstremt til dette sammen med deg 💛
+  </footer>
+
+</div>
 </body>
 </html>
-```0
